@@ -26,6 +26,11 @@ ul li {
     overflow: hidden;
 }
 
+ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
 ul li:hover {
     border-bottom: #FFC436 solid 2px;
     transition: 25ms ease;

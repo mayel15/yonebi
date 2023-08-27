@@ -1,0 +1,9 @@
+.cta-button {
+    background-color: #FFC436;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
