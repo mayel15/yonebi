@@ -1,0 +1,8 @@
+.testimonial-text, .testimonial-author {
+    font-size: 1.3rem;
+    margin: 2rem 1rem
+}
+
+.testimonial-author{
+    font-weight: bold;
+}

@@ -12,6 +12,10 @@
     color: #FFC436;  
 }
 
+.brand-logo:hover {
+    cursor: pointer;
+}
+
 ul {
     position: absolute;
     display: flex;

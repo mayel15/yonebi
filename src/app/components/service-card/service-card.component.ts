@@ -10,7 +10,4 @@ export class ServiceCardComponent {
   @Input() serviceTitle: string | undefined;
   @Input() serviceDescription: string | undefined;
   shouldAddClass: boolean = true;
-
-
-  /*document.getElementByClass('fa-solid').add: any*/
 }

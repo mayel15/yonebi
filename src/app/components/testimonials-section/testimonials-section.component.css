@@ -1,0 +1,14 @@
+#testimonials-section {
+    background-color: #353472;
+    color: white;
+    display: grid;
+    text-align: center;
+}
+
+.quote-image {
+    font-size: 5rem;
+}
+
+.testimonial-text, .testimonial-author {
+    font-size: 1.5rem;
+}
