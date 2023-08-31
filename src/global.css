@@ -299,13 +299,18 @@
 * {
     margin: 0;
     padding: 0;
+    letter-spacing: 0.08em;
 }
 
 body {
     font-family: 'Manrope', sans-serif;
 }
 
-a {
+a, li a {
     text-decoration: none;
     color: inherit;
+}
+
+section {
+  padding: 3% 7%;
 }
