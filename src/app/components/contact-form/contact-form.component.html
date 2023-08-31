@@ -1,0 +1,30 @@
+<form  (ngSubmit)="submitForm()" class="contact-input">
+    <input type="text" [(ngModel)]="formData.firstName" class="first-name-input" name="firtNname" placeholder="Prénom">
+    <input class="last-name-input" [(ngModel)]="formData.lastName" type="text" name="lastName" placeholder="Nom">
+    <input type="email" [(ngModel)]="formData.emailAdress" class="email-adress-input" name="emailAdress" placeholder="Adresse mail">
+    <input type="tel" [(ngModel)]="formData.phoneNumber" class="phone-number-input" name="phoneNumner" placeholder="Numéro téléphone">
+
+    <div>
+        <div class="title-interested-in">Interessé par </div>
+        <div class="interested-in-input row">
+            <div class="col-lg-4" *ngFor="let item of interestedInChckboxes">
+                <input type="checkbox" name="interestedIn" [(ngModel)]="item.checked" value="item.label" (change)="updateSelectedCheckboxes()"> {{ item.label
+                }}
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="title-timeframe">Estimation du temps</div>
+        <select class="project-timeframe-input" [(ngModel)]="formData.projectTimeframe" name="projectTimeframe" id="choix">
+            <option value="1 - 2 weeks">1 - 2 weeks</option>
+            <option value="3 - 5 weeks">3 - 5 weeks</option>
+            <option value="5 - 12 weeks">5 - 12 weeks</option>
+            <option value="Not in a hurry">Not in a hurry</option>
+        </select>
+    </div>
+
+    <textarea name="message" [(ngModel)]="formData.message" class="message-input" id="message" rows="6" cols="50">Votre message</textarea>
+
+    <button type="submit" class="btn btn-primary submit-button">Envoyer</button>
+</form>

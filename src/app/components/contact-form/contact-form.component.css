@@ -1,0 +1,60 @@
+input,
+.message-input,
+.project-timeframe-input {
+    margin: 10px 0;
+}
+
+.first-name-input,
+.last-name-input,
+.email-adress-input,
+.phone-number-input,
+.project-timeframe-input {
+    height: 60px;
+}
+
+.first-name-input,
+.last-name-input,
+.email-adress-input,
+.phone-number-input,
+.project-timeframe-input,
+.message-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5c3c3;
+    box-shadow: 0 2px 12px hsla(0, 0%, 68%, .25);
+    border-radius: 8px;
+    text-overflow: ellipsis;
+    font-family: Kumbh Sans, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #737373;
+    letter-spacing: 0;
+    line-height: 25px;
+}
+
+.project-timeframe-input option:focus {
+    border-color: #333;
+    outline: none;
+  }
+
+  .project-timeframe-input option {
+    background-color: #fff;
+    color: #333;
+  }
+
+.project-timeframe-input option:checked {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.submit-button {
+    background-color: #FFC436;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.title-interested-in, .title-timeframe {
+    margin: 0.5rem 0;
+    font-weight: 600;
+}
+
