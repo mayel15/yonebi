@@ -19,12 +19,12 @@ interface FormData {
 export class ContactFormComponent {
   name: string | undefined = '';
   interestedInChckboxes = [
-    { label: 'Web & App Design', checked: false },
-    { label: 'Développement Web & Mobile', checked: false },
-    { label: 'Maintenance IT', checked: false },
+    { label: 'Design', checked: false },
+    { label: 'Développement Web', checked: false },
+    { label: 'Développement Mobile', checked: false },
+    { label: 'E-commerce', checked: false },
     { label: 'SEO', checked: false },
-    { label: 'Logo & Design Graphique', checked: false },
-    { label: 'Marketing Digital', checked: false },
+    { label: 'Consulting IT', checked: false },
   ];
   formData: FormData = {
     firstName: '',

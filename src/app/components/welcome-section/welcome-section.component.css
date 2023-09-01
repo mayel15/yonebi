@@ -10,12 +10,13 @@
     display: grid;
     align-items: center;
     text-align: center;
-    padding-top: 9%;
+    padding-top: 13%;
 }
 
 .title, .sub-title {
     color: #fff;
     padding: 3% 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     
 }
 
@@ -29,4 +30,10 @@
     font-weight: bold;
     font-size: 1.75rem;
     padding: 3% 0;
+}
+
+@media screen and (max-width: 1100px) {
+    .welcome-section {
+        height: 70vh;
+    }
 }

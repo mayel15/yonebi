@@ -8,34 +8,34 @@ import { Component } from '@angular/core';
 export class ServicesSectionComponent {
   services = [
     {
-      icon: 'fa-table-columns',
-      title: 'Web & App Design',
-      description: 'Obtenez un site Web personnalisé, optimisé pour le référencement et optimisé pour les mobiles, créé pour vous ou votre entreprise aux prix les plus bas et livré en un rien de temps.'
+      icon: 'fa-paintbrush',
+      title: 'Design',
+      description: "Procurez vous un logo, un design graphique ou un ui/ux design de vos sites et applications, afin d'améliorer votre branding."
     },
     {
       icon: 'fa-code',
-      title: 'Développement Web & Mobile',
-      description: 'Obtenez un site Web personnalisé, optimisé pour le référencement et optimisé pour les mobiles, créé pour vous ou votre entreprise aux prix les plus bas et livré en un rien de temps.'
+      title: 'Développement Web',
+      description: 'Obtenez un site ou application web sur mesure, optimisé pour les appareils mobiles, à des tarifs très avantageux et livré rapidement.'
     },
     {
-      icon: 'fa-screwdriver-wrench',
-      title: 'Maintenance IT',
-      description: 'Obtenez un site Web personnalisé, optimisé pour le référencement et optimisé pour les mobiles, créé pour vous ou votre entreprise aux prix les plus bas et livré en un rien de temps.'
+      icon: 'fa-mobile-screen-button',
+      title: 'Développement Mobile',
+      description: 'Transformez votre idée en application mobile cross platform, iOS & Android, accessible à une audience diversifiée d\'utilisateurs.'
+    },
+    {
+      icon: 'fa-cart-shopping',
+      title: 'E-commerce',
+      description: 'Vendez des produits en ligne ou recevez des dons depuis votre site. Gérez les commandes et les stocks. Acceptez les paiements par carte de crédit ou mobile money.'
     },
     {
       icon: 'fa-magnifying-glass',
       title: 'SEO',
-      description: 'Obtenez un site Web personnalisé, optimisé pour le référencement et optimisé pour les mobiles, créé pour vous ou votre entreprise aux prix les plus bas et livré en un rien de temps.'
+      description: 'Améliorez le référencement de votre entreprise sur Google, Yahoo, Bing et plus de 100 moteurs de recherche, afin que tous vos clients et futurs clients puissent vous trouver facilement en ligne.'
     },
     {
-      icon: 'fa-paintbrush',
-      title: 'Logo & Design Graphique',
-      description: 'Obtenez un site Web personnalisé, optimisé pour le référencement et optimisé pour les mobiles, créé pour vous ou votre entreprise aux prix les plus bas et livré en un rien de temps.'
-    },
-    {
-      icon: 'fa-bullhorn',
-      title: 'Marketing Digital',
-      description: 'Obtenez un site Web personnalisé, optimisé pour le référencement et optimisé pour les mobiles, créé pour vous ou votre entreprise aux prix les plus bas et livré en un rien de temps.'
+      icon: 'fa-chalkboard-user',
+      title: 'Consulting IT',
+      description: 'Nous accompagnons les entreprises en les conseillant dans l\'éléboration d\'une stratégie IT efficace.'
     },
   ] 
 

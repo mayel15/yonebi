@@ -8,8 +8,9 @@ import { Component } from '@angular/core';
 export class TestimonialsSectionComponent {
     testimonials = [
       {
-        text: "The team at BN Designs are not just web designers and developers, but top-notched experts in web design and development, who always put the interest of the client first. With cutting-edge results, they help clients stand out in the crowded world of the world wide web and in today's competitive market. I am extremely pleased with their services.",
-        author: 'Marco LeRoc - Author, Speaker, and Founder Marco LeRoc & Co.'
+        text: `Je tiens à exprimer ma profonde satisfaction envers Tech Yonebi pour le site web exceptionnel qu'ils ont créé pour moi. En tant qu'entrepreneur, je cherchais un partenaire de confiance pour donner vie à ma vision en ligne, et Tech Yonebi a totalement dépassé mes attentes.
+        Dès le début, leur équipe a démontré une compréhension profonde de mes besoins et de ma niche de marché. Ils ont suivi un processus transparent et professionnel tout au long du projet, en tenant compte de mes commentaires et de mes idées. Le résultat final est un site web magnifique, réactif et convivial, qui représente parfaitement mon entreprise.`,
+        author: 'Emmanuel Martin - Entrepreneur '
       }
     ]
 }

@@ -8,34 +8,34 @@ import { Component } from '@angular/core';
 export class WhyUsSectionComponent {
   args = [
     {
-      icon: 'fa-table-columns',
+      icon: 'fa-dollar-sign',
       title: 'Abordable',
       description: 'Nous proposons des options de tarification bon marché et abordables et nous travaillerons sur votre projet quel que soit votre budget, grand ou petit.'
     },
     {
       icon: 'fa-magnifying-glass',
       title: 'SEO performant',
-      description: 'Votre site est construit dans un souci de référencement. Les moteurs de recherche indexeront votre site Web et vous aideront à atteindre tous les clients et téléspectateurs potentiels.'
+      description: 'Votre site est construit dans un souci de référencement. Les moteurs de recherche indexeront votre site Web et vous aideront à atteindre tous les potentiels clients.'
     },
     {
       icon: 'fa-mobile-screen',
       title: 'Optimisé sur Mobile',
-      description: 'Nous proposons des options de tarification bon marché et abordables et nous travaillerons sur votre projet quel que soit votre budget, grand ou petit.'
+      description: "Tablettes. Ordinateurs portables. Téléphones. Votre site sera entièrement réactif et s'adaptera parfaitement et aura un aspect formidable sur n'importe quel appareil."
     },
     {
       icon: 'fa-certificate',
-      title: 'Ecperiences',
-      description: 'Obtenez un site Web personnalisé, optimisé pour le référencement et optimisé pour les mobiles, créé pour vous ou votre entreprise aux prix les plus bas et livré en un rien de temps.'
+      title: 'Expertise',
+      description: 'Nous nous basons sur un expertise de +5 ans en matière de développement. Ainsi, votre projet sera entre de bonnes main pour décoller.'
     },
     {
-      icon: 'fa-face-smile',
-      title: 'Logo & Design Graphique',
-      description: 'Obtenez un site Web personnalisé, optimisé pour le référencement et optimisé pour les mobiles, créé pour vous ou votre entreprise aux prix les plus bas et livré en un rien de temps.'
+      icon: 'fa-lock',
+      title: 'Sécurité et fiabilité',
+      description: 'La sécurité de vos données et de votre présence en ligne fait parti de nos priorités. Nous utilisons les technologies appropriées et les meilleures pratiques en matière de sécurité pour garantir la protection de vos données.'
     },
     {
       icon: 'fa-screwdriver-wrench',
       title: 'Service Client Exceptionnel',
-      description: 'Obtenez un site Web personnalisé, optimisé pour le référencement et optimisé pour les mobiles, créé pour vous ou votre entreprise aux prix les plus bas et livré en un rien de temps.'
+      description: 'Un support client inégalé 24h/24, 7j/7. Vous bénéficierez de temps de réponse rapides afin que vos problèmes soient pris en charge avec la plus haute priorité.'
     },
   ] 
 }

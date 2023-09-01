@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./cta-section.component.css']
 })
 export class CtaSectionComponent {
-  ctaText: string | undefined = `Petit ou gros budget, tech.yonebi. peut créer le site Web parfait pour vous ou votre entreprise.
-  Besoin d'une solution de commerce électronique, conception graphique et logo, optimisation des moteurs de recherche, courrier électronique
-  support marketing ou site Web ? tech.yonebi.  peut également vous aider !`
+  ctaText: string | undefined = `Petit ou gros budget, Tech Yonebi peut créer la solution digitale parfaite pour vous ou votre entreprise.
+  Besoin d'une application web ou mobile, d'un e-commerce, de conception graphique et logo, de SEO, ou bien juste de consulting IT ? Tech Yonebi  
+  peut également vous aider !`
 }
