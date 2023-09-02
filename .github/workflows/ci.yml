@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - develop
+      - feature/add_navbar
   pull_request:
     branches:
       - master
@@ -52,7 +53,7 @@ jobs:
           path: 'build'
 
       - name: Deploy to OVH Hosting
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        uses: SamKirkland/FTP-Deploy-Action@4.3.4
         with:
           server: ${{ secrets.OVH_FTP_SERVER }} # Utilisez une variable d'environnement pour stocker l'adresse du serveur FTP OVH
           username: ${{ secrets.OVH_FTP_USERNAME }} # Nom d'utilisateur FTP
