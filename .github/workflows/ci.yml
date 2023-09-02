@@ -45,9 +45,6 @@ jobs:
       - build
 
     steps:
-      - name: Inject Slug/Short Variables
-        uses: rlespinasse/github-slug-action@v2.x
-
       - name: Download Artifact
         uses: actions/download-artifact@v2
         with:
@@ -55,8 +52,10 @@ jobs:
           path: 'build'
 
       - name: Deploy to OVH Hosting
-        uses: pitscher/ovh-deploy-hosting-action@v1
-        env:
-          OVH_HOSTING_USER: ${{ secrets.OVH_HOSTING_USER }}
-          OVH_HOSTING_PASSWORD: ${{ secrets.OVH_HOSTING_PASSWORD }}
-          OVH_HOSTING_DOMAIN: ftp.cluster029.hosting.ovh.net
+        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        with:
+          server: ${{ secrets.OVH_FTP_SERVER }} # Utilisez une variable d'environnement pour stocker l'adresse du serveur FTP OVH
+          username: ${{ secrets.OVH_FTP_USERNAME }} # Nom d'utilisateur FTP
+          password: ${{ secrets.OVH_FTP_PASSWORD }} # Mot de passe FTP
+          local-dir: ./dist/tech.yonebi # Chemin local vers le dossier de build de l'application Angular
+          remote-dir: / # Dossier distant sur le serveur OVH où vous souhaitez déployer l'application
