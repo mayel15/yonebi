@@ -64,4 +64,4 @@ jobs:
           username: ${{ secrets.OVH_FTP_USERNAME }} # Nom d'utilisateur FTP
           password: ${{ secrets.OVH_FTP_PASSWORD }} # Mot de passe FTP
           local-dir: / # Chemin local vers le dossier de build de l'application Angular
-          server-dir: ./home/yonebig/www/ # Dossier distant sur le serveur OVH où vous souhaitez déployer l'application
+          server-dir: ./www/ # Dossier distant sur le serveur OVH où vous souhaitez déployer l'application
