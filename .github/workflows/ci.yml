@@ -31,13 +31,13 @@ jobs:
       run: npm run build
 
     - name: Deploy to OVH Hosting
-        uses: SamKirkland/FTP-Deploy-Action@4.3.3
-        with:
-          server: ${{ secrets.OVH_FTP_SERVER }} # Utilisez une variable d'environnement pour stocker l'adresse du serveur FTP OVH
-          username: ${{ secrets.OVH_FTP_USERNAME }} # Nom d'utilisateur FTP
-          password: ${{ secrets.OVH_FTP_PASSWORD }} # Mot de passe FTP
-          local-dir: ./dist # Chemin local vers le dossier de build de l'application Angular
-          server-dir: ./www/ # Dossier distant sur le serveur OVH où vous souhaitez déployer l'application
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      with:
+        server: ${{ secrets.OVH_FTP_SERVER }} # Utilisez une variable d'environnement pour stocker l'adresse du serveur FTP OVH
+        username: ${{ secrets.OVH_FTP_USERNAME }} # Nom d'utilisateur FTP
+        password: ${{ secrets.OVH_FTP_PASSWORD }} # Mot de passe FTP
+        local-dir: ./dist # Chemin local vers le dossier de build de l'application Angular
+        server-dir: /www/ # Dossier distant sur le serveur OVH où vous souhaitez déployer l'application
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v2
