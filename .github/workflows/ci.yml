@@ -46,6 +46,11 @@ jobs:
       - build
 
     steps:
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+
       - name: Download Artifact
         uses: actions/download-artifact@v2
         with:
@@ -59,4 +64,4 @@ jobs:
           username: ${{ secrets.OVH_FTP_USERNAME }} # Nom d'utilisateur FTP
           password: ${{ secrets.OVH_FTP_PASSWORD }} # Mot de passe FTP
           local-dir: / # Chemin local vers le dossier de build de l'application Angular
-          remote-dir: / # Dossier distant sur le serveur OVH où vous souhaitez déployer l'application
+          server-dir: / # Dossier distant sur le serveur OVH où vous souhaitez déployer l'application
