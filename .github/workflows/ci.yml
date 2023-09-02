@@ -35,11 +35,13 @@ jobs:
     - name: Upload Artifact
       uses: actions/upload-artifact@v2
       with:
-        name: tech.yonebi-${{ github.ref }}-${{ github.run_id }}-${{ github.run_number }}
+        name: tech.yonebi-version-1
+        #name: tech.yonebi-${{ github.ref }}-${{ github.run_id }}-${{ github.run_number }}
         path: ./dist/tech.yonebi
 
   deploy:
     runs-on: ubuntu-latest
+    need: build
 
     steps:
       - name: Inject Slug/Short Variables
