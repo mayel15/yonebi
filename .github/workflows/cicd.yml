@@ -33,7 +33,7 @@ jobs:
         server: ${{ secrets.OVH_FTP_SERVER }}
         username: ${{ secrets.OVH_FTP_USERNAME }}
         password: ${{ secrets.OVH_FTP_PASSWORD }}
-        local-dir: ./dist/
+        local-dir: ./dist/tech.yonebi/
         server-dir: /www/
 
     - name: Upload Artifact
