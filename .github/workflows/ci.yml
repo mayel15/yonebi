@@ -56,14 +56,7 @@ jobs:
 
       - name: Deploy to OVH Hosting
         uses: pitscher/ovh-deploy-hosting-action@v1
-        with:
-          publish-dir: './build'
-          production-branch: master
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          deploy-message: "Deploy from GitHub Actions"
-          enable-pull-request-comment: true
-          enable-commit-comment: true
-          overwrites-pull-request-comment: true
+        with:  
         env:
           OVH_HOSTING_USER: ${{ secrets.OVH_HOSTING_USER }}
           OVH_HOSTING_PASSWORD: ${{ secrets.OVH_HOSTING_PASSWORD }}
