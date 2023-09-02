@@ -49,10 +49,8 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v2
-        with:
-          node-version: 16.x
+      - name: Reclaim cache directory
+        run: chow -R 1001:1001 /github/home/.cache && echo "pwn date cache"
 
       - name: Download Artifact
         uses: actions/download-artifact@v2
