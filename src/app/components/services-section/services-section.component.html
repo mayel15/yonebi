@@ -1,0 +1,14 @@
+<section id="services-section">
+    <app-title-section [titleSection]="'Nos services'"></app-title-section>
+    <div class="row service-card-list">
+        <app-service-card 
+        *ngFor="let service of services"
+        [serviceIcon]="service.icon"
+        [serviceTitle]="service.title"
+        [serviceDescription]="service.description"
+        [ngClass]="'col-lg-4'"
+        ></app-service-card>
+    </div>
+</section>
+
+

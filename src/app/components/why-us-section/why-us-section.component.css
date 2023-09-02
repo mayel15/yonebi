@@ -1,0 +1,8 @@
+#why-us-section {
+    background-image: url('/assets/images/white-background-color-reversed-vertically.jpg');
+    background-size: cover;
+}
+
+.why-us-card-list {
+    margin-top: 3rem;
+}

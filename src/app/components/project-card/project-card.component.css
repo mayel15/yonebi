@@ -1,0 +1,35 @@
+.project-card-container {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    margin: 1rem 0;
+    background-color: transparent;
+}
+
+.project-image {
+    height: 10rem;
+    width: 15rem;
+    border-radius: 20px 20px 0 0;
+}
+
+.project-name {
+    font-size: 1rem;
+    color: /*#343E92*/ #fff;
+    margin: 0.5rem 0;
+    padding: 0.75rem 0;
+    background-color: #FFC436;
+    border-radius: 0 0 20px 20px;
+    font-weight: 600;
+}
+
+.project-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+    transition: 25ms ease;
+}
+
+.project-name:hover {
+    transform: translateY(5px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+    transition: 25ms ease;
+}
