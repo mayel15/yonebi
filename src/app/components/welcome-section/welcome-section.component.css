@@ -1,6 +1,6 @@
 .welcome-section {
     background-image: url('/assets/images/digital-solutions.jpg');
-    height: 100vh;
+    height: auto;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -10,7 +10,7 @@
     display: grid;
     align-items: center;
     text-align: center;
-    padding-top: 13%;
+    padding: 13% 0;
 }
 
 .title, .sub-title {
@@ -33,7 +33,11 @@
 }
 
 @media screen and (max-width: 1100px) {
-    .welcome-section {
-        height: 100vh;
+    .title {
+        font-size: 2rem;
+    }
+
+    .sub-title {
+        font-size: 1.75rem;
     }
 }
