@@ -1,0 +1,12 @@
+<section id="why-us-section">
+    <app-title-section [titleSection]="'Pourquoi Nous'"></app-title-section>
+    <div class="row why-us-card-list">
+        <app-why-us-card 
+        *ngFor="let arg of args"
+        [argIcon]="arg.icon"
+        [argTitle]="arg.title"
+        [argDescription]="arg.description"
+        [ngClass]="'col-lg-4'"
+        ></app-why-us-card>
+    </div>
+</section>

@@ -1,0 +1,11 @@
+.cta-section {
+    display: grid;
+    text-align: center;
+    align-items: center;
+}
+
+.cta-text {
+    color: #353472;
+    font-size: 1.25rem;
+    margin: 2rem;
+}

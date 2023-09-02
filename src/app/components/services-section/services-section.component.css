@@ -1,0 +1,8 @@
+#services-section {
+    background-image: url('/assets/images/white-background-color.jpg');
+    background-size: cover;
+}
+
+.service-card-list {
+    margin-top: 3rem;
+}

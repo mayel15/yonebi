@@ -1,0 +1,13 @@
+.icon-arrow-section, .title-section {
+    color: #353472;
+    font-size: 2rem;
+}
+
+.title-section {
+    font-weight: bold;
+}
+.title-section-container {
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
