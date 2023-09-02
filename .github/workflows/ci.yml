@@ -39,20 +39,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Inject slug/short variables  
+        uses: rlespinasse/github-slug-action@v2.x  
 
-    name: Deploy
-    run: 
+      - name: Download artifact  
+        uses: actions/download-artifact@v2  
+        with:  
+          name: tech.yonebi-${{ env.GITHUB_REF_SLUG }}-${{ github.run_id }}-${{ github.run_number }}  
+          path: './build'
 
-  #deploy:
-  #  runs-on: ubuntu-latest
-  #  name: Deploy my nice code
-  #  steps:
-  #  - name: Deploy to OVH hosting
-  #    uses: pitscher/ovh-deploy-hosting-action@v1
-  #    env:
-  #      OVH_HOSTING_USER: ${{ secrets.OVH_HOSTING_USER }}
-  #      OVH_HOSTING_PASSWORD: ${{ secrets.OVH_HOSTING_PASSWORD }}
-  #      OVH_HOSTING_DOMAIN: ftp.cluster029.hosting.ovh.net
-  #     REPOSITORY_NAME: tech.yonebi
-  #      REPOSITORY_URL: https://github.com/mayel15/tech.yonebi"""
+  
+      - name: Deploy to OVH hosting
+        uses: pitscher/ovh-deploy-hosting-action@v1
+        with:
+          publish-dir: './build'  
+          production-branch: master  
+          github-token: ${{ secrets.GITHUB_TOKEN }}  
+          deploy-message: "Deploy from GitHub Actions"  
+          enable-pull-request-comment: true  
+          enable-commit-comment: true  
+          overwrites-pull-request-comment: true
+        env:
+          OVH_HOSTING_USER: ${{ secrets.OVH_HOSTING_USER }}
+          OVH_HOSTING_PASSWORD: ${{ secrets.OVH_HOSTING_PASSWORD }}
+          OVH_HOSTING_DOMAIN: ftp.cluster029.hosting.ovh.net
+          #REPOSITORY_NAME: tech.yonebi
+          #REPOSITORY_URL: https://github.com/mayel15/tech.yonebi
