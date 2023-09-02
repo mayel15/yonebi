@@ -41,7 +41,8 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    need: build
+    need: 
+      - build
 
     steps:
       - name: Inject Slug/Short Variables
