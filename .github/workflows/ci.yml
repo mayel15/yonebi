@@ -1,10 +1,10 @@
-name: Jekyll site CI
+name: Yonebi CI
 
 on:
   push:
     branches: [ "master" ]
   pull_request:
-    branches: [ "master", "develop" ]
+    branches: [ "master" ]
 
 jobs:
   build:
@@ -15,8 +15,8 @@ jobs:
 
     - name: Use node 19
     - uses: actions/setup-node@v3
-    with: 
-      node-version: 19
+      with: 
+        node-version: 19
 
     - name: Install dependencies
       run: npm install 
