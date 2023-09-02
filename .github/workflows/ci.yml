@@ -56,7 +56,6 @@ jobs:
 
       - name: Deploy to OVH Hosting
         uses: pitscher/ovh-deploy-hosting-action@v1
-        with:  
         env:
           OVH_HOSTING_USER: ${{ secrets.OVH_HOSTING_USER }}
           OVH_HOSTING_PASSWORD: ${{ secrets.OVH_HOSTING_PASSWORD }}
