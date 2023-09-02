@@ -46,6 +46,9 @@ jobs:
       - build
 
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
         with:
@@ -64,4 +67,4 @@ jobs:
           username: ${{ secrets.OVH_FTP_USERNAME }} # Nom d'utilisateur FTP
           password: ${{ secrets.OVH_FTP_PASSWORD }} # Mot de passe FTP
           local-dir: / # Chemin local vers le dossier de build de l'application Angular
-          server-dir: www # Dossier distant sur le serveur OVH où vous souhaitez déployer l'application
+          server-dir: ./www/ # Dossier distant sur le serveur OVH où vous souhaitez déployer l'application
