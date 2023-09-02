@@ -2,32 +2,37 @@ name: Jekyll site CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches:
+      - master
+      - develop
   pull_request:
-    branches: [ "master" ]
+    branches:
+      - master
+      - develop
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout Repository
+      uses: actions/checkout@v2
 
-    - name: Use node 19
-    - uses: actions/setup-node@v3
-      with: 
-        node-version: 19
+    - name: Use Node.js 16.x
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16.x
 
-    - name: Install dependencies
-      run: npm install 
+    - name: Install Dependencies
+      run: npm install
 
-    - name: Build project
+    - name: Build Project
       run: npm run build
 
-    - name: Inject slug/short variables  
-      uses: rlespinasse/github-slug-action@v2.0
+    - name: Inject Slug/Short Variables
+      uses: rlespinasse/github-slug-action@v2.x
 
-    - name: Upload artifact  
+    - name: Upload Artifact
       uses: actions/upload-artifact@v2
       with:
         name: tech.yonebi-${{ github.ref }}-${{ github.run_id }}-${{ github.run_number }}
@@ -37,29 +42,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Inject slug/short variables  
-        uses: rlespinasse/github-slug-action@v2.0  
+      - name: Inject Slug/Short Variables
+        uses: rlespinasse/github-slug-action@v2.x
 
-      - name: Download artifact  
-        uses: actions/download-artifact@v2  
-        with:  
-          name: tech.yonebi-${{ env.GITHUB_REF_SLUG }}-${{ github.run_id }}-${{ github.run_number }}  
-          path: './build'
+      - name: Download Artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: tech.yonebi-${{ env.GITHUB_REF_SLUG }}-${{ github.run_id }}-${{ github.run_number }}
+          path: 'build'
 
-  
-      - name: Deploy to OVH hosting
+      - name: Deploy to OVH Hosting
         uses: pitscher/ovh-deploy-hosting-action@v1
         with:
-          publish-dir: './build'  
-          production-branch: master  
-          github-token: ${{ secrets.GITHUB_TOKEN }}  
-          deploy-message: "Deploy from GitHub Actions"  
-          enable-pull-request-comment: true  
-          enable-commit-comment: true  
+          publish-dir: './build'
+          production-branch: master
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Deploy from GitHub Actions"
+          enable-pull-request-comment: true
+          enable-commit-comment: true
           overwrites-pull-request-comment: true
         env:
           OVH_HOSTING_USER: ${{ secrets.OVH_HOSTING_USER }}
           OVH_HOSTING_PASSWORD: ${{ secrets.OVH_HOSTING_PASSWORD }}
           OVH_HOSTING_DOMAIN: ftp.cluster029.hosting.ovh.net
-          #REPOSITORY_NAME: tech.yonebi
-          #REPOSITORY_URL: https://github.com/mayel15/tech.yonebi
