@@ -1,4 +1,4 @@
-name: Tech Yonebi CI/CD
+name: Yonebi CI/CD
 
 on:
   push:
@@ -33,19 +33,19 @@ jobs:
         server: ${{ secrets.OVH_FTP_SERVER }}
         username: ${{ secrets.OVH_FTP_USERNAME }}
         password: ${{ secrets.OVH_FTP_PASSWORD }}
-        local-dir: ./dist/tech.yonebi/
+        local-dir: ./dist/yonebi/
         server-dir: /www/
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v2
       with:
-        name: tech.yonebi-version-1
+        name: yonebi-version-1
         path: ./dist
 
     - name: Download Artifact
       uses: actions/download-artifact@v2
       with:
-        name: tech.yonebi-version-1
+        name: yonebi-version-1
         path: 'build'
 
       

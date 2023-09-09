@@ -19,7 +19,7 @@ export class PortofolioSectionComponent {
     },
     {
       image: '/assets/images/tech-yonebi-project.png',
-      name: 'Tech Yonebi',
+      name: 'Yonebi',
       link: '/',
     }
   ]
