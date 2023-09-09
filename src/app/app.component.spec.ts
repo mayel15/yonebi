@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'tech.yonebi'`, () => {
+  it(`should have as title 'yonebi'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('tech.yonebi');
+    expect(app.title).toEqual('yonebi');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('tech.yonebi app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('yonebi app is running!');
   });
 });
