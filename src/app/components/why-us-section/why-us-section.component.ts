@@ -20,12 +20,12 @@ export class WhyUsSectionComponent {
     {
       icon: 'fa-mobile-screen',
       title: 'Optimisé sur Mobile',
-      description: "Tablettes. Ordinateurs portables. Téléphones. Votre site sera entièrement réactif et s'adaptera parfaitement et aura un aspect formidable sur n'importe quel appareil."
+      description: "Tablettes, ordinateurs portables, téléphones, votre site sera entièrement réactif et s'adaptera parfaitement et aura un aspect formidable sur n'importe quel appareil."
     },
     {
       icon: 'fa-certificate',
       title: 'Expertise',
-      description: 'Nous nous basons sur un expertise de +5 ans en matière de développement. Ainsi, votre projet sera entre de bonnes main pour décoller.'
+      description: 'Nous nous basons sur une expertise de +5 ans en matière de développement. Ainsi, votre projet sera entre de bonnes main pour décoller.'
     },
     {
       icon: 'fa-lock',
