@@ -10,7 +10,7 @@ export class ServicesSectionComponent {
     {
       icon: 'fa-paintbrush',
       title: 'Design',
-      description: "Procurez vous d'un logo, un design graphique ou un ui/ux design de vos sites et applications, afin d'améliorer votre branding."
+      description: "Procurez vous d'un logo, d'un design graphique ou d'un ui/ux design de vos sites et applications, afin d'améliorer votre branding."
     },
     {
       icon: 'fa-code',
