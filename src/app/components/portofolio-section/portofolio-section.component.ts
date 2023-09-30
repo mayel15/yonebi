@@ -7,11 +7,11 @@ import { Component } from '@angular/core';
 })
 export class PortofolioSectionComponent {
   projects = [
-    {
+    /*{
       image: '/assets/images/by-ndeyaa-project.png',
       name: 'By Ndeyaa',
       link: 'https://mayel15.github.io/by-ndeyaa/',
-    },
+    },*/
     {
       image: '/assets/images/share-yonebi-project.png',
       name: 'Share Yonebi',
