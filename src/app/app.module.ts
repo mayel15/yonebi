@@ -24,6 +24,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { DeleteGpmaUserDataComponent } from './components/delete-gpma-user-data/delete-gpma-user-data.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { HttpClient } from '@angular/common/http';
     ContactFormComponent,
     HomePageComponent,
     ContactPageComponent,
+    DeleteGpmaUserDataComponent,
   ],
   imports: [
     BrowserModule,
