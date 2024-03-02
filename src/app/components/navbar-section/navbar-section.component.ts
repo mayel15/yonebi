@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar-section.component.css']
 })
 export class NavbarSectionComponent {
-
+  handleClick() {
+    window.location.href = '/suppression-de-donnees-gpma';
+  }
 }
