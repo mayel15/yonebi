@@ -45,7 +45,7 @@ export class DeleteGpmaUserDataComponent {
             lastName: '',
             emailAdress: '',
           };
-          alert('Votre demande de suppression des données a été bien envoyé et sera traité dans les plus brefs delais ! :)');
+          alert('Votre demande de suppression des données a été bien envoyée et sera traitée dans les plus brefs delais ! :)');
           window.location.href = '/';
         }
         
